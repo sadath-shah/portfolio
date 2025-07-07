@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohammed Sadath | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body,
+      html {
+        font-family: Arial, sans-serif;
+        color: whitesmoke;
+        background-color: white;
+      }
+
+      .navbar {
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+
+      .navbar .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .navbar ul li a:hover {
+        color: #00ffd0;
+        text-decoration: underline;
+      }
+
+      .hero-section {
+        height: 100vh;
+        background-image: url("https://images.unsplash.com/photo-1527430253228-e93688616381?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 60px;
+        color: white;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+      }
+
+      .hero-section h1 {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      .hero-section p {
+        font-size: 1.2rem;
+        max-width: 600px;
+      }
+
+      .about-skills-container {
+        max-width: 1000px;
+        margin: 80px auto;
+        padding: 0 20px;
+      }
+
+      .about-card,
+      .skills-card,
+      .projects-card,
+      .contact-card {
+        background: white;
+        color: black;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+      }
+
+      .about-card {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+      }
+
+      .about-text {
+        flex: 1 1 60%;
+      }
+
+      .about-text h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      .about-text p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+      }
+
+      .about-photo {
+        flex: 1 1 35%;
+        display: flex;
+        justify-content: center;
+      }
+
+      .about-photo img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #010007;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .skills-card h2,
+      .projects-card h2,
+      .contact-card h2 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+      }
+
+      .skills-list {
+        list-style: none;
+        font-size: 1.2rem;
+        line-height: 2;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0;
+        text-align: center;
+      }
+
+      .project-description {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .contact-details {
+        font-size: 1.1rem;
+        line-height: 2;
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .contact-details i {
+        margin-right: 10px;
+      }
+
+      .contact-details a {
+        color: #0077b5;
+        text-decoration: none;
+      }
+
+      .contact-details a:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        background-color: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">MOHAMMED SADATH</div>
+      <ul>
+        <li><a href="myportfolio.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="hero-section">
+      <h1>Hi, I am Mohammed Sadath</h1>
+    </div>
+
+    <div class="about-skills-container">
+      <div id="aboutme" class="about-card">
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hello! I’m Mohammed Sadath, a dedicated computer science student
+            with a focus on backend development. I enjoy creating structured,
+            scalable web applications using tools like PHP, MySQL, and Django.
+            I'm constantly learning and passionate about transforming ideas into
+            digital experiences.
+          </p>
+        </div>
+        <div class="about-photo">
+          <img
+            src="C:\Users\sadat.DESKTOP-40R8H5U.000\OneDrive\Desktop\profileimage.jpg"
+            alt="Mohammed Sadath"
+          />
+        </div>
+      </div>
+
+      <div id="skills" class="skills-card">
+        <h2>My Skills</h2>
+        <ul class="skills-list">
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>PHP & MySQL</li>
+          <li>Django & Python</li>
+          <li>Backend Development</li>
+        </ul>
+      </div>
+
+      <div id="projects" class="projects-card">
+        <h2>Projects</h2>
+        <div class="project-description">
+          <h3>Student Registration System</h3>
+          <p>
+            A full-stack student registration web application that enables users
+            to submit details securely using a structured form. It includes
+            client-side and server-side validation, profile image upload,
+            password hashing, and stores all student data in a MySQL database.
+            Admins can view, update, and delete student records with a clean
+            Bootstrap-powered UI. Technologies used: PHP, MySQL, HTML, CSS,
+            JavaScript.
+          </p>
+        </div>
+      </div>
+
+      <div id="contact" class="contact-card">
+        <h2>Contact Me</h2>
+        <div class="contact-details">
+          <p>
+            <i class="fas fa-envelope" style="color: #d44638"></i>
+            <a href="mailto:sadathshah@gmail.com">sadathshah@gmail.com</a>
+          </p>
+          <p>
+            <i class="fas fa-phone" style="color: #25d366"></i>
+            <a href="tel:+919030145248">+91 9030145248</a>
+          </p>
+          <p>
+            <i class="fab fa-linkedin" style="color: #0077b5"></i>
+            <a
+              href="https://www.linkedin.com/in/sadath-shah-0ba935285/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+          <p>
+            <i class="fab fa-github" style="color: #333"></i>
+            <a href="https://github.com/sadath-shah" target="_blank">GitHub</a>
+          </p>
+          <p>
+            <i class="fab fa-instagram" style="color: #e4405f"></i>
+            <a href="https://instagram.com/sadath_shah" target="_blank"
+              >@sadath_shah</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Mohammed Sadath. Designed by Mohammed Sadath.
+    </div>
+  </body>
+</html>
