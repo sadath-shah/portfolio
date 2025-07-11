@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        color: #333;
+      }
+
+      .navbar {
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.6);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+
+      .navbar .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      .navbar ul li a:hover {
+        color: #00ffd0;
+        text-decoration: underline;
+      }
+
+      .about-project {
+        max-width: 1000px;
+        margin: 120px auto 40px;
+        padding: 20px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .about-project h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .about-project p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        margin-bottom: 30px;
+      }
+
+      .project-images {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .project-images img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .footer {
+        background-color: #111;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.95rem;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">MOHAMMED SADATH</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="about-project">
+      <h2>Student Registration System</h2>
+      <p>
+        The Student Registration System is a complete web-based application
+        created to manage student data in a structured and user-friendly way. It
+        is primarily designed using PHP and MySQL for the backend, while the
+        frontend uses HTML, CSS, Bootstrap, and JavaScript to ensure a
+        responsive and modern user interface. When a student visits the
+        registration page, they are presented with a clean form layout where
+        they can enter their details such as first name, last name, email,
+        contact number, course, and upload a profile picture. This form includes
+        client-side validation using HTML5 and JavaScript to ensure all fields
+        are filled out correctly before submission. Once the form is submitted,
+        the data is sent to the backend PHP script. Here, server-side validation
+        is performed for extra security, checking for things like duplicate
+        entries and ensuring proper formatting. The password provided by the
+        student is hashed using PHP’s password hashing functions before it is
+        stored in the database. This ensures that even if the database were
+        compromised, raw passwords would not be exposed. The uploaded profile
+        image is saved in a specific folder on the server, and its file path is
+        recorded in the MySQL database alongside the student’s other
+        information. This allows the application to retrieve and display each
+        student's profile image when viewing records. For administration, there
+        is a separate login-protected admin panel. After logging in, the admin
+        can access a dashboard that displays all registered students in a table
+        format. The admin can perform several actions from this dashboard: View
+        complete student profiles, including profile pictures. Edit student
+        information, with forms pre-filled with existing data for easy updates.
+        Delete student records permanently if needed. The admin dashboard is
+        also styled using Bootstrap, providing responsive table layouts and form
+        designs that look good on both desktop and mobile devices. Overall, this
+        system is built with practical backend development concepts in mind:
+        session management for admin login, database CRUD operations (Create,
+        Read, Update, Delete), secure password storage, image handling, and
+        responsive UI design. It serves as a solid example of a full-stack PHP
+        and MySQL project suitable for real-world educational institutions or as
+        a portfolio project for backend developers.
+      </p>
+
+      <div class="project-images">
+        <img
+          src="https://via.placeholder.com/300x200.png?text=Form+Page"
+          alt="Form Page Screenshot"
+        />
+        <img
+          src="https://via.placeholder.com/300x200.png?text=Admin+Dashboard"
+          alt="Admin Dashboard Screenshot"
+        />
+        <img
+          src="https://via.placeholder.com/300x200.png?text=Student+Details"
+          alt="Student Details Screenshot"
+        />
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Mohammed Sadath. Designed by Mohammed Sadath.
+    </div>
+  </body>
+</html>
