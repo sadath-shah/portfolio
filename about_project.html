@@ -73,10 +73,15 @@
         color: #333;
       }
 
-      .about-project p {
+      .about-project ul {
         font-size: 1.2rem;
         line-height: 1.8;
         margin-bottom: 30px;
+        padding-left: 20px;
+      }
+
+      .about-project ul ul {
+        margin-top: 10px;
       }
 
       .project-images {
@@ -118,79 +123,71 @@
 
     <div class="about-project">
       <h2>Student Registration System</h2>
-      <p>
-        ✅ Student Registration System Overview
-Purpose: Web-based application for managing student data in a structured and user-friendly way.
+      <ul>
+        <li><strong>Purpose:</strong> Web-based application for managing student data in a structured and user-friendly way.</li>
 
-✅ Technologies Used:
-Backend: PHP, MySQL
+        <li><strong>Technologies Used:</strong>
+          <ul>
+            <li>Backend: PHP, MySQL</li>
+            <li>Frontend: HTML, CSS, Bootstrap, JavaScript</li>
+          </ul>
+        </li>
 
-Frontend: HTML, CSS, Bootstrap, JavaScript
+        <li><strong>Core Features:</strong>
+          <ul>
+            <li>Student Registration Form:
+              <ul>
+                <li>Clean, responsive layout using Bootstrap</li>
+                <li>Fields: First Name, Last Name, Email, Contact Number, Course, Profile Picture</li>
+                <li>Client-side validation with HTML5 and JavaScript</li>
+                <li>Server-side validation for security:
+                  <ul>
+                    <li>Duplicate entry checks</li>
+                    <li>Proper data formatting</li>
+                  </ul>
+                </li>
+                <li>Passwords hashed using PHP’s password_hash() function</li>
+                <li>Profile image upload:
+                  <ul>
+                    <li>Saved in a dedicated server folder</li>
+                    <li>Image path stored in MySQL alongside student data</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
 
-✅ Core Features:
-Student Registration Form:
+            <li>Admin Panel:
+              <ul>
+                <li>Login-protected using session management</li>
+                <li>Dashboard displaying all registered students in a table format</li>
+                <li>Admin Actions:
+                  <ul>
+                    <li>View complete student profiles (including profile pictures)</li>
+                    <li>Edit student information with pre-filled forms</li>
+                    <li>Delete student records permanently</li>
+                  </ul>
+                </li>
+                <li>Responsive design for both desktop and mobile</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
 
-Clean, responsive layout using Bootstrap.
-
-Fields: First Name, Last Name, Email, Contact Number, Course, Profile Picture.
-
-Client-side validation with HTML5 and JavaScript.
-
-Server-side validation for security:
-
-Duplicate entry checks.
-
-Proper data formatting.
-
-Passwords hashed using PHP’s password_hash() function.
-
-Profile image upload:
-
-Saved in a dedicated server folder.
-
-Image path stored in MySQL alongside student data.
-
-Admin Panel:
-
-Login-protected using session management.
-
-Dashboard displaying all registered students in a table format.
-
-Admin Actions:
-
-View complete student profiles (including profile pictures).
-
-Edit student information with pre-filled forms.
-
-Delete student records permanently.
-
-Responsive design for both desktop and mobile.
-
-✅ Backend Concepts Demonstrated:
-Session management for admin authentication.
-
-Database CRUD operations (Create, Read, Update, Delete).
-
-Secure password storage.
-
-Image handling and storage.
-
-Clean, responsive UI using Bootstrap.
-      </p>
+        <li><strong>Backend Concepts Demonstrated:</strong>
+          <ul>
+            <li>Session management for admin authentication</li>
+            <li>Database CRUD operations (Create, Read, Update, Delete)</li>
+            <li>Secure password storage</li>
+            <li>Image handling and storage</li>
+            <li>Clean, responsive UI using Bootstrap</li>
+          </ul>
+        </li>
+      </ul>
 
       <div class="project-images">
-        <img
-          src="https://raw.githubusercontent.com/sadath-shah/portfolio/main/homepage%20.png"
-          alt="Homepage Screenshot"
-        />
-        <img
-          src="https://raw.githubusercontent.com/sadath-shah/portfolio/main/admin%20portal.png"
-          alt="Admin Dashboard Screenshot"
-        />
-        <img
-          src="https://raw.githubusercontent.com/sadath-shah/portfolio/main/student%20portal.png"
-          alt="Student Details Screenshot"
-        />
+        <img src="https://raw.githubusercontent.com/sadath-shah/portfolio/main/homepage%20.png" alt="Homepage Screenshot" />
+        <img src="https://raw.githubusercontent.com/sadath-shah/portfolio/main/admin%20portal.png" alt="Admin Dashboard Screenshot" />
+        <img src="https://raw.githubusercontent.com/sadath-shah/portfolio/main/student%20portal.png" alt="Student Details Screenshot" />
       </div>
     </div>
 
